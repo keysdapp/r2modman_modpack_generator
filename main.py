@@ -100,7 +100,7 @@ def main():
     }
 
     os.mkdir(name)
-    json.dump(manifest, open("{name}/manifest.json", "w+", encoding="UTF-8"), indent=4)
+    json.dump(manifest, open(f"{name}/manifest.json", "w+", encoding="UTF-8"), indent=4)
 
     if enable_config:
         copytree(
